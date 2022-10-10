@@ -12,7 +12,7 @@ export default props => {
 
   return(
     <>
-      <Image style={styles.logo} source={require('../../../logo.png')} />
+      <Image style={styles.logo} source={require('../../assets/logo.png')} />
     </>
   )
 }
