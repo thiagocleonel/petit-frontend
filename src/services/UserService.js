@@ -4,15 +4,21 @@ import { PanResponder } from 'react-native';
 
 const host = "https://br-petit.herokuapp.com";
 
-export const login = () => {
+/*
+
+export const login = (email, password) => {
     axios
         .post(host+"/api/login",
             {"user": {
-                "email":"thiagocleonel3245@gmail.com",
-                "password":"1234356"
+                "email": email,
+                "password": password
             }})
         .then(data => { console.log(data) })
         .catch(error => { console.log(error)});
+}
+
+export const logout = () => {
+    
 }
 
 export const signup = (email, name, lastname, password) => {
@@ -33,9 +39,4 @@ export const signup = (email, name, lastname, password) => {
             .catch(error => { console.log(error)});
 }
 
-export const logout = () => {
-
-}
-
-
-
+*/

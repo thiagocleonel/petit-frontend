@@ -1,14 +1,17 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import LoginScreen from './src/components/screens/LoginScreen'
+import LoginScreen from './src/Components/Screens/LoginScreen'
+import { Provider as PaperProvider } from 'react-native-paper';
 import axios from "axios";
     
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <LoginScreen></LoginScreen>
-    </View>
+  <PaperProvider>
+      <View style={styles.container}>
+        <LoginScreen></LoginScreen>
+      </View>
+  </PaperProvider>
   );
 }
 
